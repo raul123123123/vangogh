@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Lato:wght@300&family=Playfair+Display:ital@1&family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('fuente1/stylesheet.css');
+@import url('icono1/fontawesome-free-6.1.1-web/css/all.min.css');
+
+:root{
+    --color1: #5E88BF;
+    --color2: #F2D852;
+    --color3: #1C2D8C;
+    --color4: #203B8C;
+    --color5: #3C74A6;
+    --color6: #BDBF7A;
+    --color7: #BF9004;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --color-gris-claro: #CCCCCC;
+    --color-gris-oscuro: #555555;
+}
+
+body{
+    margin: 0;
+    color: var(--color-gris-oscuro);
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+h1{
+    justify-content: center;
+    font-size: 150px;
+    font-family: 'palace_of_sportsregular';
+    text-transform: uppercase;
+}
+
+h2{
+    color: var(--color-blanco);
+    font-family: 'palace_of_sportsregular';
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 100px;
+}
+
+h3{
+    text-justify: auto;
+    font-family: 'Playfair Display', serif;
+    padding-top: 43px;
+}
+
+h4{
+    font-family: 'palace_of_sportsregular';
+    text-transform: uppercase;
+}
+
+z{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--color-blanco);
+    font-family: 'Work Sans', sans-serif;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--color3);
+    padding-top: 17px;
+    font-family: 'Work Sans', sans-serif;
+}
+q{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--color-blanco);
+    font-family: 'Work Sans', sans-serif;
+}
+
+#main-banner{
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../images/“La\ única\ vez\ que\ me\ siento\ vivo\ es\ cuando\ estoy\ pintando.”\ \(3\).jpg);
+    color: var(--color-blanco);
+    text-align: center;
+    max-width: 100%;
+    height: 757px;
+    align-items: center;
+    opacity: 1;
+}
+
+#biografia{
+    background-color: var(--color4);
+}
+
+#frase{
+    background-color: var(--color2);
+    color: var(--color3);
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+#frase h3{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#obras{
+    padding-top: 1px;
+    display: block;
+    flex-wrap: wrap;
+    background-color: var(--color2);
+    color: var(--color3);
+    width: 100%;
+}
+
+#video{
+    background-color: var(--color5);
+}
+
+#main-footer{
+    background-color: var(--color-negro);
+    color: var(--color-gris-claro);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#peliculas{
+    background-color: var(--color3);
+    padding-top: 60px;
+}
+
+#museo{
+    color: #1C2D8C;
+}
+
+.padded{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.container{
+    max-width: 1250px; /* ancho máximo */ 
+
+    /* Al ser ambos márgenes automáticos son iguales y se ve centrado */ 
+    
+    margin-left: auto; 
+    margin-right: auto;
+
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.row{
+    display: flex; /* Acomoda los objetos que contiene uno al costado del otro */
+
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col{
+    flex-basis: 0;
+    flex-grow: 1;
+
+    padding-left:  15px;
+    padding-right: 15px;
+    padding-top: 45px;
+    padding-bottom: 25px;
+    
+}
+
+.img-fluid{
+    max-width: 120%;
+    height: auto;
+}
+
+.alinear-verticalmente{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-obra{
+    max-width: 100%;
+    
+}
+
+.color{
+    color: var(--color3);
+    font-family: 'palace_of_sportsregular';
+}
+
+.img-pelicula{
+    display: flex;
+    justify-content: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h4{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+    background:#1C2D8C;
+	
+	animation: slide 16s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 80%;
+    padding-left: 160px;
+
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
